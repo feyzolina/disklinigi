@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentİstanbul</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body onscroll="yukari()">
+
+    <div onclick="pageup()" id="up"
+        style="display: none; position: fixed;right: 40px;bottom: 40px;padding: 10px;background-color: rgb(30, 100, 125); border-radius: 30%;">
+        ▲
+    </div>
+
+
+    <div id="container">
+        <header>
+            <h1>DENTİST<span>ANBUL</span></h1>
+            <div id="header">
+                <a href="https://www.google.com">WebSitemiz: www.google.com</a>
+                <a href="Tel://+905555555555">Tel: +905555555555</a>
+            </div>
+        </header>
+        <nav>
+            <input type="checkbox" id="menu-toggle" hidden>
+            <label for="menu-toggle" class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div id="nav">
+                <ul class="nav_ul">
+                    <li><a href="#">Hakkımızda</a></li>
+                    <li><a href="#">Kliniğimiz</a></li>
+                    <li class="acilirmenu">
+                        <a href="#">Uzmanlık Alanlarımız</a>
+                        <ul id="altmenu">
+                            <li><a href="#">Diş Estetiği</a></li>
+                            <li><a href="#">İmplant</a></li>
+                            <li><a href="#">Ortodonti</a></li>
+                        </ul>
+                    </li>
+                    <li class="acilirmenu">
+                        <a href="#">Doktorlarımız</a>
+                        <ul id="altmenu" class="doktor">
+                            <li><a href="#">Pr. Dr. X</a></li>
+                            <li><a href="#">Pr. Dr. Y</a></li>
+                            <li><a href="#">Pr. Dr. Z</a></li>
+                            <li><a href="#">Pr. Dr. W</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <section id="ilkbolum">
+                <div id="foto1">
+                    <img src="images/anasayfa.jpg" alt="">
+                </div>
+                <div id="slayt_alani">
+                    <div id="slider">
+                        <div class="slides" id="kayan1">
+                            <img src="images/danışma.jpg" alt="">
+                        </div>
+                        <div class="slides" id="kayan2">
+                            <img src="images/danışma2.jpg" alt="">
+                        </div>
+                        <div class="slides" id="kayan3">
+                            <img src="images/beklemeodası.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section id="ikincibolum">
+                <h2>Uzmanlık Alanlarımız</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptas commodi, natus odio doloribus
+                    temporibus numquam possimus explicabo expedita reiciendis mollitia quam, qui fuga inventore ducimus
+                    eligendi alias nemo porro. Lorem ipsum dolor sit amet connsectetur adipisicing elit. Perspiciatis
+                    reiciendis non ducimus quidem obcaecati et atque delectus? Repudiandae, eos sapiente.</p>
+                <div>
+                    <ul id="disbolumleri">
+                        <li><i class="fas fa-tooth"></i></i>AĞIZ, DİŞ VE ÇENE CERRAHİSİ</li>
+                        <li><i class="fas fa-tooth"></i></i>ESTETİK DİŞ HEKİMLİĞİ</li>
+                        <li><i class="fas fa-tooth"></i></i>İMPLANT TEDAVİSİ</li>
+                        <li><i class="fas fa-tooth"></i></i>ORTODONTİ</li>
+                    </ul>
+                </div>
+                <div id="kaybolanbolum" onclick="toggleTumbolum()"><button>TÜM HİZMETLERİMİZ</button></div>
+                <div id="tumbolumclick">
+                    <ul>
+                        <li><i class="fas fa-tooth"></i>Periodontoloji</li>
+                        <li><i class="fas fa-tooth"></i>Gülüş Tasarımı</li>
+                        <li><i class="fas fa-tooth"></i>Endodonti</li>
+                        <li><i class="fas fa-tooth"></i>Pedodonti</li>
+                        <li><i class="fas fa-tooth"></i>Diş Beyazlatma</li>
+                        <li><i class="fas fa-tooth"></i>Hamilelikte Diş Hekimliği</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="tanitim">
+                <h2>NEDEN BİZ?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quasi distinctio alias vero
+                    dolores praesentium dicta fugiat exercitationem qui dolore sit aliquam labore repellat nesciunt
+                    reprehenderit eos amet eligendi commodi quod quis, ipsam numquam? Laboriosam delectus, vel officia
+                    consectetur alias consequuntur ea porro suscipit fugiat incidunt dolorum similique illo
+                    placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eaque incidunt ipsum quos
+                    velit, obcaecati cupiditate voluptas. Sequi dolores quia iure nihil expedita maxime necessitatibus
+                    doloremque in, illo, unde excepturi accusamus ducimus odit nobis culpa eaque. Ipsa deleniti
+                    deserunt, assumenda tempora blanditiis, molestias libero commodi fugit rerum nostrum unde qui.</p>
+            </section>
+            <footer id="footer">
+                <div id="footer-info">
+                    <h2>BİZE ULAŞIN</h2>
+                    <h3>Web Sitemiz</h3>
+                    <a href="http://www.google.com">http://www.google.com</a>
+                    <h3>İnstagram Adresimiz</h3>
+                    <a href="www.instagram.com">www.instagram.com</a>
+                    <h3>X Adresimiz</h3>
+                    <a href="www.x.com">www.x.com</a>
+                </div>
+                <div id="harita">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2053.345775963302!2d28.96278296336067!3d41.038978257444775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1734477710650!5m2!1str!2str"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
